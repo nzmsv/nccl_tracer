@@ -3,10 +3,9 @@
 #include <signal.h>
 #include <unistd.h>
 
-enum bpf_link_type { BPF_LINK_TYPE_UNSPEC = 0 };
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
-#include "ib/util/nccl/nccl_trace.skel.h"
+#include "nccl_trace.skel.h"
 
 static volatile sig_atomic_t exiting;
 static FILE *outfile;
